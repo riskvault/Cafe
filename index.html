@@ -699,3 +699,159 @@
       .hero-content {
         width: min(1200px, calc(100% - 2rem));
       }
+
+      .nav-inner {
+        min-height: 76px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+      }
+
+      .hero {
+        padding: 7rem 0 3.4rem;
+      }
+
+      .hero-content {
+        gap: 2.2rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.5rem, 12vw, 3.5rem);
+        line-height: 0.98;
+      }
+
+      .hero-desc {
+        font-size: 1rem;
+        line-height: 1.72;
+      }
+
+      .hero-btns {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn-primary,
+      .btn-outline {
+        width: 100%;
+        min-height: 56px;
+      }
+
+      .hero-visual {
+        order: -1;
+        max-width: 360px;
+      }
+
+      .hero-img {
+        border-radius: 180px 180px 24px 24px;
+      }
+
+      .hero-badge {
+        position: static;
+        margin-top: 1rem;
+        width: 100%;
+      }
+
+      .section-shell,
+      .cta-section {
+        padding: 4.2rem 0;
+      }
+
+      .section-title {
+        margin-bottom: 2rem;
+      }
+
+      .feature-card,
+      .info-card {
+        padding: 1.7rem;
+      }
+
+      .menu-item {
+        grid-template-columns: 1fr auto;
+        gap: 0.8rem;
+      }
+
+      .menu-price {
+        margin-left: 0.6rem;
+        font-size: 1.45rem;
+      }
+
+      .hours-list li {
+        grid-template-columns: 1fr;
+        gap: 0.35rem;
+      }
+
+      .hours-time {
+        text-align: left;
+      }
+
+      .cta-box {
+        padding: 2.7rem 1.3rem;
+        border-radius: 26px;
+      }
+
+      .cta-box p {
+        font-size: 0.98rem;
+      }
+
+      .footer {
+        padding: 2.5rem 0 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="logo">nomad<span>.</span></a>
+
+      <ul class="nav-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li><a href="#contact" class="nav-cta">Book a Table</a></li>
+      </ul>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu">
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#visit">Visit</a>
+      <a href="#contact" class="mobile-cta">Book a Table</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-tag">Specialty Coffee · Co-Working · Community</span>
+        <h1>Where great coffee meets <em>great ideas</em></h1>
+        <p class="hero-desc">
+          A third-wave coffee bar and flexible workspace in the heart of the city.
+          Craft beverages, fast wifi, and a calm community of creators — all under one roof.
+        </p>
+        <div class="hero-btns">
+          <a href="#menu" class="btn-primary">See the Menu</a>
+          <a href="#contact" class="btn-outline">Book a Spot</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-img"></div>
+        <div class="hero-badge">
+          <strong>4.9 ★</strong>
+          <span>320+ reviews on Google</span>
+        </div>
+      </div>
+    </div>
+  </section>
