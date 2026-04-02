@@ -482,3 +482,117 @@
     .menu-item:hover {
       background: rgba(200, 149, 108, 0.06);
     }
+
+    .menu-copy {
+      min-width: 0;
+    }
+
+    .menu-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.36rem;
+      line-height: 1.12;
+      color: var(--cream);
+      margin-bottom: 0.32rem;
+    }
+
+    .menu-desc {
+      color: rgba(245, 240, 232, 0.72);
+      font-size: 0.95rem;
+      line-height: 1.55;
+      font-weight: 400;
+    }
+
+    .menu-price {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.6rem;
+      line-height: 1;
+      color: var(--caramel);
+      white-space: nowrap;
+      margin-left: 1rem;
+      align-self: center;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.8rem;
+    }
+
+    .info-card {
+      background: var(--white);
+      border: 1px solid rgba(200, 149, 108, 0.14);
+      border-radius: 28px;
+      padding: 2.4rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .info-card .section-title {
+      margin-bottom: 1.4rem;
+      max-width: none;
+    }
+
+    .hours-list {
+      list-style: none;
+      margin-top: 1rem;
+    }
+
+    .hours-list li {
+      display: grid;
+      grid-template-columns: minmax(130px, 1fr) minmax(140px, 1fr);
+      gap: 1rem;
+      align-items: start;
+      padding: 0.95rem 0;
+      border-bottom: 1px solid var(--latte);
+    }
+
+    .hours-list li:last-child {
+      border-bottom: none;
+    }
+
+    .hours-day {
+      color: var(--espresso);
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    .hours-time {
+      color: var(--text-light);
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.45;
+      text-align: left;
+    }
+
+    .location-addr {
+      margin-top: 0.35rem;
+      color: var(--text-light);
+      font-size: 1.06rem;
+      line-height: 1.85;
+      font-weight: 400;
+    }
+
+    .location-addr strong {
+      color: var(--espresso);
+      font-weight: 700;
+    }
+
+    .map-placeholder {
+      margin-top: 1.5rem;
+      min-height: 190px;
+      border-radius: 20px;
+      border: 1px solid rgba(200, 149, 108, 0.14);
+      background:
+        linear-gradient(rgba(245, 240, 232, 0.78), rgba(245, 240, 232, 0.78)),
+        linear-gradient(135deg, #e5d7c7 0%, #f7efe5 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1.2rem;
+      color: var(--text-light);
+      font-size: 0.88rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
