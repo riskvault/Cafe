@@ -855,3 +855,181 @@
       </div>
     </div>
   </section>
+
+  <section class="section-shell" id="about">
+    <div class="container">
+      <span class="section-tag">Why Nomad</span>
+      <h2 class="section-title">More than coffee. A place to build, think, and belong.</h2>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-kicker">Coffee</div>
+          <h3>Single-Origin Beans</h3>
+          <p>
+            Roasted in small batches every week. We source directly from farms in
+            Ethiopia, Colombia, and Guatemala.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-kicker">Workspace</div>
+          <h3>Work-Friendly Space</h3>
+          <p>
+            High-speed fiber wifi, power outlets at every seat, and flexible seating
+            for solo work or focused meetings.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-kicker">Daily Choice</div>
+          <h3>Plant-Based Options</h3>
+          <p>
+            Oat, almond, and coconut milk available, plus a rotating selection of
+            fresh pastries and lighter bites.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-shell menu-section" id="menu">
+    <div class="container">
+      <span class="section-tag">Popular Picks</span>
+      <h2 class="section-title">Crafted with intention, served with care.</h2>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-copy">
+            <div class="menu-name">Flat White</div>
+            <div class="menu-desc">Double ristretto, velvet microfoam</div>
+          </div>
+          <div class="menu-price">$4.50</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-copy">
+            <div class="menu-name">Cold Brew</div>
+            <div class="menu-desc">18-hour steep, served on ice</div>
+          </div>
+          <div class="menu-price">$5.00</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-copy">
+            <div class="menu-name">Matcha Latte</div>
+            <div class="menu-desc">Ceremonial-grade matcha, oat milk</div>
+          </div>
+          <div class="menu-price">$5.50</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-copy">
+            <div class="menu-name">Avocado Toast</div>
+            <div class="menu-desc">Sourdough, chili flakes, lime</div>
+          </div>
+          <div class="menu-price">$8.00</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-copy">
+            <div class="menu-name">Banana Bread</div>
+            <div class="menu-desc">Walnut, dark chocolate chunks</div>
+          </div>
+          <div class="menu-price">$4.00</div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-copy">
+            <div class="menu-name">Day Pass</div>
+            <div class="menu-desc">Unlimited coffee + workspace</div>
+          </div>
+          <div class="menu-price">$15.00</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-shell" id="visit">
+    <div class="container">
+      <div class="info-grid">
+        <div class="info-card">
+          <span class="section-tag">Hours</span>
+          <h2 class="section-title">When to visit</h2>
+
+          <ul class="hours-list">
+            <li>
+              <span class="hours-day">Monday — Friday</span>
+              <span class="hours-time">7:00 AM — 9:00 PM</span>
+            </li>
+            <li>
+              <span class="hours-day">Saturday</span>
+              <span class="hours-time">8:00 AM — 10:00 PM</span>
+            </li>
+            <li>
+              <span class="hours-day">Sunday</span>
+              <span class="hours-time">8:00 AM — 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <span class="section-tag">Location</span>
+          <h2 class="section-title">Find us here</h2>
+
+          <div class="location-addr">
+            42 Peace Avenue<br />
+            Sukhbaatar District<br />
+            Ulaanbaatar, Mongolia<br /><br />
+            <strong>hello@nomadcoffee.mn</strong><br />
+            +976 7700 1234
+          </div>
+
+          <div class="map-placeholder">Map Preview</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Ready for your first cup?</h2>
+        <p>
+          Reserve a table or a day pass online — or just walk in.
+          We'd love to see you.
+        </p>
+        <a href="#" class="btn-primary">Book a Table</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="logo">nomad<span>.</span></div>
+      <p>© 2026 Nomad Coffee. Crafted with care in Ulaanbaatar.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+
+    if (menuToggle) {
+      menuToggle.addEventListener('click', () => {
+        document.body.classList.toggle('menu-open');
+        const expanded = document.body.classList.contains('menu-open');
+        menuToggle.setAttribute('aria-expanded', String(expanded));
+      });
+    }
+
+    mobileMenuLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        document.body.classList.remove('menu-open');
+        if (menuToggle) {
+          menuToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
